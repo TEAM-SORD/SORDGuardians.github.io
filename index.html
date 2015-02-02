@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script type='text/javascript' src="guardian.js"> </script>
+	<head>		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+		
+		<script type='text/javascript' src="guardian.js"> </script>
+	</head>
+	<body>
+		
+		<div role='tabpanel'>
+			<ul id='sections'class="nav nav-tabs" role="tablist">
+			   
+			   <li role='presentation' class='active'><a href="#uknews" id='uknews' aria-controls='uknews' data-toggle="tab">UK News</a></li>
+			   <li role='presentation'><a href="#football" id='football' aria-controls='football' data-toggle="tab">Football</a></li>
+			   <li role='presentation'><a href="#travel" id='travel' aria-controls='travel' data-toggle="tab"> Travel </a></li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="uknews">...</div>
+				<div role="tabpanel" class="tab-pane" id="football">...</div>
+				<div role="tabpanel" class="tab-pane" id="travel">...</div>
+			</div>
+		</div>
+		<ul id="uknews">
+			<li>placeholder</li>
+		</ul>
 
-</head>
-<body>
+		<ul id="football">
+			<li>football placeholder</li>
+		</ul>
 
-<button>Send an HTTP GET request to a page and get the result back</button>
-
-</body>
+		<ul id="travel">
+			<li> travel placeholder</li>
+		</ul>
+	</body>
 </html>
